@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="scripts.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <section id="intro">
+        <div>
+            <div>
+                <h1>This is your cart</h1>
+                <p>
+                    Here you can adjust the quantity of each item through “
+                    +” and “-” buttons, Delete items from the cart, like
+                    items and see the total price.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- panier--------------------------------------------------------------------------------------------------------------------- -->
+    <section id="cart">
+
+        <div id="everything" class="kolchi">
+            <!-- item1 ------------------------------------------------- -->
+            <div id="item1" class="item">
+                <div>
+                    <img src="./gtx.webp" alt="gtx" />
+                    <label for="price">Price </label>
+                    <p class="price">699</p>
+                </div>
+                <h3>
+                    EVGA GeForce RTX 3080 FTW3 Ultra Gaming, 10G-P5-3897-KL,
+                    10GB GDDR6X, iCX3 Technology, ARGB LED, Metal Backplate,
+                    LHR
+                </h3>
+                <div class="adjust">
+                    <button type="button" id="minusbutton1">-</button>
+                    <label for="quantity">Quantity:</label>
+                    <p id="value1">0</p>
+                    <button type="button" id="plusbutton1">+</button>
+
+                    <i class="fa fa-heart" style="font-size: 30px;"></i>
+                    <button class="remove" id="item1_remove">Remove</button>
+                </div>
+            </div>
+            <!-- item2--------------------------------------------------------------------------- -->
+            <div id="item2" class="item">
+                <div>
+                    <img src="./ram.webp" alt="ram" />
+                    <label for="price">Price </label>
+                    <p class="price">82</p>
+                </div>
+                <h3>
+                    Crucial Ballistix 3000 MHz DDR4 DRAM Desktop Gaming
+                    Memory Kit 16GB (8GBx2) CL15 BL2K8G30C15U4B(BLACK)
+                </h3>
+                <div class="adjust">
+
+                    <button type="button" id="minusbutton2">-</button>
+                    <label for="quantity">Quantity:</label>
+                    <p id="value2">0</p>
+                    <button type="button" id="plusbutton2">+</button>
+                    <i class="fa fa-heart" style="font-size: 30px;"></i>
+                    <button class="remove" id="item2_remove">Remove</button>
+                </div>
+            </div>
+            <!-- -------------------------item 3 --------------------------- -->
+            <div id="item3" class="item">
+                <div>
+                    <img src="./ssd.webp" alt="ssd" />
+                    <label for="price">Price </label>
+                    <p class="price">120</p>
+                </div>
+                <h3>
+                    SAMSUNG 970 EVO Plus SSD 500GB - M.2 NVMe Interface Internal Solid State Drive with V-NAND
+                    Technology (MZ-V7S500B/AM)
+                </h3>
+                <div class="adjust">
+
+                    <button type="button" id="minusbutton3">-</button>
+                    <label for="quantity">Quantity:</label>
+                    <p id="value3">0</p>
+                    <button type="button" id="plusbutton3">+</button>
+                    <i class="fa fa-heart" style="font-size: 30px;"></i>
+                    <button class="remove" id="item3_remove">Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- total price  --------------------------------------------------------------------- -->
+
+        <div class="total">
+            <h1>Total</h1>
+            <p id="total">0</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

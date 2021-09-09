@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+    background-color: white;
+}
+
+#intro {
+    padding: 50px;
+
+    text-align: left;
+}
+#items {
+    padding: 25px;
+    margin: 50px;
+    grid-template-columns: 1fr;
+}
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+    border-bottom: 1px solid #eef2f2;
+    align-items: center;
+    padding: 15px;
+    gap: 50px;
+    border-bottom-width: 100%;
+    border-bottom: cyan;
+    border-bottom: 2px solid;
+    text-align: start;
+}
+
+#items img {
+    width: 230px;
+    height: 150px;
+    margin: 10px;
+}
+.adjust {
+    size: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+.plusbutton {
+    background-color: transparent;
+    border: none;
+    color: rgb(128, 230, 115);
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    top: 5px;
+    cursor: pointer;
+}
+.minusbutton {
+    background-color: transparent;
+    border: none;
+    color: rgba(204, 58, 32, 0.774);
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.remove {
+    background-color: rgba(255, 72, 0, 0.897);
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+.total {
+    text-align: center;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+}

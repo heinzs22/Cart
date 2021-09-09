@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/Shopping%20cart.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/style.css">
+    <script src="./Document_files/scripts.js.download" async=""></script>
+    <link rel="stylesheet" href="./Document_files/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="intro">
+        <div>
+            <div>
+                <h1>This is your cart</h1>
+                <p>
+                    Here you can adjust the quantity of each item through “
+                    +” and “-” buttons, Delete items from the cart, like
+                    items and see the total price.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="cart">
+        <div id="items">
+            <div id="item1" class="item">
+                <div>
+                    <img src="./Document_files/geforce-rtx-3080.jpg" alt="gtx"><br>
+                    <label for="price">Price </label>
+                    <p class="price">699</p>
+                </div>
+                <h3>
+                    EVGA GeForce RTX 3080 FTW3 Ultra Gaming, 10G-P5-3897-KL,
+                    10GB GDDR6X, iCX3 Technology, ARGB LED, Metal Backplate,
+                    LHR
+                </h3>
+                <div class="adjust">
+                    <form name="fadjust">
+                        <button type="button" class="minusbutton">-</button>
+                        <label for="quantity">Quantity: </label>
+                        <p class="value">0</p>
+                        <button type="button" class="plusbutton">+</button><br>
+                    </form>
+                    <br>
+                    <i class="fa fa-heart" style="font-size: 30px; color: black"></i>
+                    <button class="remove">Remove</button>
+                </div>
+            </div>
+            <div id="item2" class="item">
+                <div>
+                    <img src="./Document_files/ram.webp" alt="ram"><br>
+                    <label for="price">Price </label>
+                    <p class="price">82</p>
+                </div>
+                <h3>
+                    Crucial Ballistix 3000 MHz DDR4 DRAM Desktop Gaming
+                    Memory Kit 16GB (8GBx2) CL15 BL2K8G30C15U4B(BLACK)
+                </h3>
+                <div class="adjust">
+                    <form name="fadjust">
+                        <button type="button" class="minusbutton">-</button>
+                        <label for="quantity">Quantity:</label>
+                        <p class="value">3</p>
+                        <button type="button" class="plusbutton">+</button>
+                    </form>
+                    <i class="fa fa-heart" style="font-size: 30px; color: black"></i>
+                    <button class="remove">Remove</button>
+                </div>
+            </div>
+            <div id="item3" class="item">
+                <div>
+                    <img src="./Document_files/ssd.webp" alt="ssd"><br>
+                    <label for="price">Price </label>
+                    <p class="price">120</p>
+                </div>
+                <h3>
+                    Crucial Ballistix 3000 MHz DDR4 DRAM Desktop Gaming
+                    Memory Kit 16GB (8GBx2) CL15 BL2K8G30C15U4B(BLACK)
+                </h3>
+                <div class="adjust">
+                    <form name="fadjust">
+                        <button type="button" class="minusbutton">-</button>
+                        <label for="quantity">Quantity:</label>
+                        <p class="value">0</p>
+                        <button type="button" class="plusbutton">+</button>
+                    </form>
+                    <i class="fa fa-heart" style="font-size: 30px; color: black"></i>
+                    <button class="remove">Remove</button>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <h1>Total</h1>
+            <p id="total">246</p>
+        </div>
+    </section>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -1,0 +1,55 @@
+var value = document.getElementsByClassName("value");
+var btnp = document.getElementsByClassName("plusbutton");
+var btmin = document.getElementsByClassName("minusbutton");
+var price = document.getElementsByClassName("price");
+var total = document.getElementById("total");
+var items = document.getElementsByClassName("item");
+var never = document.getElementsByClassName("remove");
+allprices = [];
+allpriceschanges = [];
+var sum = 0;
+var sum2 = 0;
+
+function adjust(arr1, arr2, arr3, arr4, arr5) {
+    for (let i = 0; i < arr1.length; i++) {
+        arr1[i].addEventListener("click", function () {
+            arr2[i].innerHTML = Number(arr2[i].innerHTML) + 1;
+            arr4[i] = Number(arr5[i].innerHTML) * Number(arr2[i].innerHTML);
+            sum = 0;
+            for (var j in arr4) {
+                sum += arr4[j];
+            }
+            var n = sum.toString();
+            return (total.innerHTML = n);
+        });
+
+        arr3[i].addEventListener("click", function () {
+            if (Number(arr2[i].innerHTML) == 0) {
+                arr2[i].innerHTML = 0;
+            } else {
+                arr2[i].innerHTML = Number(arr2[i].innerHTML) - 1;
+                arr4[i] -= Number(arr5[i].innerHTML);
+                sum = 0;
+                for (var j in arr4) {
+                    sum += arr4[j];
+                }
+            }
+            var n = sum.toString();
+            return (total.innerHTML = n);
+        });
+    }
+    return sum;
+}
+function takedown(arr1, arr2, arr3, arr4) {
+    for (let i = 0; i < arr1.length; i++) {
+        arr1[i].addEventListener("click", function () {
+            sum -= Number(arr3[i].innerHTML) * Number(arr4[i].innerHTML);
+            console.log(sum);
+            arr2[i].remove();
+        });
+    }
+    return sum;
+}
+sum2 = takedown(never, items, price, value);
+
+sum = adjust(btnp, value, btmin, allprices, price, sum);
